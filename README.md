@@ -39,3 +39,11 @@ formally defined by a separating hyperplane. In other words,
 given labeled training data (supervised learning), the algorithm
 outputs an optimal hyperplane which categorizes new
 examples.
+
+# Dataset
+
+You can download USPS dataset from here:
+
+https://www.kaggle.com/datasets/bistaumanga/usps-dataset
+
+put dataset into your path directory and then run and enjoy!
