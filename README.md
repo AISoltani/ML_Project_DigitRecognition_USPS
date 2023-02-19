@@ -40,6 +40,12 @@ given labeled training data (supervised learning), the algorithm
 outputs an optimal hyperplane which categorizes new
 examples.
 
+# Accuracy
+
+The table of accuracy:
+
+![Table_Accuracy](https://github.com/AISoltani/ML_Project_DigitRecognition_USPS/blob/master/ScreenShot_20230220015608.png)
+
 # Dataset
 
 You can download USPS dataset from here:
