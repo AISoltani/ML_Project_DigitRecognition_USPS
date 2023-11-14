@@ -14,6 +14,7 @@ QDA, LRC, MLP, ABC, DTC, HOG + SVM, Bayesian, SGD &
 RFC this work has achieved approximately 80% of success rate
 for USPS database identification.
 
+
 Our model works in three steps: 1) Preprocessing, 2) Features
 extraction and 3)Use classification Method. In the
 preprocessing, we have some basic image processing to
