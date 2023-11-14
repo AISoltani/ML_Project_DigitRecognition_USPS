@@ -1,6 +1,5 @@
 # ML_Project_DigitRecognition_USPS
 
-
 # Extraction Methods of Handwritten Digit Recognition Tested on the USPS Database
 Handwritten digit recognition has recently been of
 very interest among the researchers because of the evolution of
