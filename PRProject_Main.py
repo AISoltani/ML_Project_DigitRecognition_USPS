@@ -74,7 +74,7 @@ def process_usps_data(patch):
     validation_usps_label= np.array(validation_usps_label)
     return validation_usps, validation_usps_label
 
-#
+
 # Numeric confusion matrix function to describes the performance of a classifier
 
 def plot_confusion_matrix(cm, classes,normalize=False,title='Confusion matrix',cmap=plt.cm.Blues):
