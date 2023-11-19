@@ -461,8 +461,8 @@ def Random_Forest_Classifier(x_train,x_test,y_test,y_valid):
     class_names = enc.classes_
     plot_confusion_matrix(rfc_cm, classes=class_names, title='RFC Confusion matrix, without normalization')
     plt.show()
-
-##########################################################################################################################
+    
+#####################################################################################################################
 
 # Multilayer Prceptron Classifier
 
