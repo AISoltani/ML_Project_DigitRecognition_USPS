@@ -684,9 +684,7 @@ def Stochastic_Gradient_Descent(x_train,x_test,y_test,y_valid):
     plot_confusion_matrix(gpc_cm, classes=class_names, title='Stochastic Gradient Descent Classifier\n Confusion Matrix, without normalization')
     plt.show()
 
-##########################################################################################################################
-
-
+#########################################################################################################################
 
 # Main fnction
 
