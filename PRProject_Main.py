@@ -490,7 +490,7 @@ def Multilayer_Prceptron_Classifier(x_train,x_test,y_test,y_valid):
     plot_confusion_matrix(mlp_cm, classes=class_names, title='MLP Confusion Matrix, without normalization')
     plt.show()
 
-##########################################################################################################################
+#########################################################################################################################
 
 # Ada Boost Classifier
 
@@ -518,7 +518,7 @@ def Ada_Boost_Classifier(x_train,x_test,y_test,y_valid):
     plot_confusion_matrix(abc_cm, classes=class_names, title='Ada Boost Classifier Confusion Matrix, without normalization')
     plt.show()
 
-#########################################################################################################################
+########################################################################################################################
 
 # Decision Tree Classifier Classifier
 
