@@ -735,7 +735,6 @@ def PRProject_Main(n):
     elif n==14:
         Stochastic_Gradient_Descent(usps_dataset_train, usps_dataset_test, test_usps_label, validation_usps_label)
 
-
 if __name__ == "__main__":
     # Reading USPS data
 
