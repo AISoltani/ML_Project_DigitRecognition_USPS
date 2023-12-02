@@ -462,7 +462,7 @@ def Random_Forest_Classifier(x_train,x_test,y_test,y_valid):
     plot_confusion_matrix(rfc_cm, classes=class_names, title='RFC Confusion matrix, without normalization')
     plt.show()
     
-#####################################################################################################################
+####################################################################################################################
 
 # Multilayer Prceptron Classifier
 
@@ -518,7 +518,7 @@ def Ada_Boost_Classifier(x_train,x_test,y_test,y_valid):
     plot_confusion_matrix(abc_cm, classes=class_names, title='Ada Boost Classifier Confusion Matrix, without normalization')
     plt.show()
 
-########################################################################################################################
+############################################################################################################################
 
 # Decision Tree Classifier Classifier
 
@@ -579,7 +579,7 @@ def Gaussian_Process_Classifier(x_train,x_test,y_test,y_valid):
     plot_confusion_matrix(gpc_cm, classes=class_names, title='Gaussian Process Classifier Confusion Matrix, without normalization')
     plt.show()
 
-##########################################################################################################################
+####################################################################################################################################
 
 # Support Vector Machine classifier
 
@@ -608,7 +608,7 @@ def Support_Vector_Machine(x_train,x_test,y_test,y_valid):
     plt.show()
 
 
-##########################################################################################################################
+#########################################################################################################################################
 
 # HOG + Linear SVM Classifier
 
@@ -655,7 +655,7 @@ def HOG_L_SVM(x_train,x_test,y_test2,y_valid):
     plt.show()
 
 
-##########################################################################################################################
+#####################################################################################################################################
 
 # Stochastic Gradient Descent
 
@@ -684,7 +684,7 @@ def Stochastic_Gradient_Descent(x_train,x_test,y_test,y_valid):
     plot_confusion_matrix(gpc_cm, classes=class_names, title='Stochastic Gradient Descent Classifier\n Confusion Matrix, without normalization')
     plt.show()
 
-#########################################################################################################################
+################################################################################################################################################
 
 # Main fnction
 
