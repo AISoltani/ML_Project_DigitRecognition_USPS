@@ -52,7 +52,7 @@ def reformat_tf(dataset, labels):
     labels = (np.arange(num_labels) == labels[:,None]).astype(np.float32)
     return dataset, labels
 
-# Preprocessing with change input data size to fixed optimized size
+# Preprocessing with change input data size to fixed optimized size.
 
 def process_usps_data(patch):
     path_to_data = patch
