@@ -122,7 +122,7 @@ def get_normed_mean_cov(X):
 
 def Knn_Classifier(x_train,y_train,x_test,y_test):
 
-#Find besk K for KNN classifier
+#Find besk K for KNN classifier.
 
     accuracies = []
     kVals = range(1, 30, 2)
