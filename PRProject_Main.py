@@ -490,7 +490,7 @@ def Multilayer_Prceptron_Classifier(x_train,x_test,y_test,y_valid):
     plot_confusion_matrix(mlp_cm, classes=class_names, title='MLP Confusion Matrix, without normalization')
     plt.show()
 
-########################################################################################################################
+#####################################################################################################################
 
 # Ada Boost Classifier
 
@@ -518,7 +518,7 @@ def Ada_Boost_Classifier(x_train,x_test,y_test,y_valid):
     plot_confusion_matrix(abc_cm, classes=class_names, title='Ada Boost Classifier Confusion Matrix, without normalization')
     plt.show()
 
-############################################################################################################################
+ ############################################################################################################################
 
 # Decision Tree Classifier Classifier
 
@@ -551,7 +551,7 @@ def Decision_Tree_Classifier(x_train,x_test,y_test,y_valid):
     plot_confusion_matrix(dtc_cm, classes=class_names, title='Decision Tree_Classifier Confusion Matrix, without normalization')
     plt.show()
 
-################################################################################################################################
+ ###############################################################################################################################
 
 # Gaussian Process Classifier
 
@@ -579,7 +579,7 @@ def Gaussian_Process_Classifier(x_train,x_test,y_test,y_valid):
     plot_confusion_matrix(gpc_cm, classes=class_names, title='Gaussian Process Classifier Confusion Matrix, without normalization')
     plt.show()
 
-####################################################################################################################################
+ ###################################################################################################################################
 
 # Support Vector Machine classifier
 
@@ -608,7 +608,7 @@ def Support_Vector_Machine(x_train,x_test,y_test,y_valid):
     plt.show()
 
 
-#########################################################################################################################################
+ ########################################################################################################################################
 
 # HOG + Linear SVM Classifier
 
@@ -655,7 +655,7 @@ def HOG_L_SVM(x_train,x_test,y_test2,y_valid):
     plt.show()
 
 
-#####################################################################################################################################
+ ####################################################################################################################################
 
 # Stochastic Gradient Descent
 
@@ -684,7 +684,7 @@ def Stochastic_Gradient_Descent(x_train,x_test,y_test,y_valid):
     plot_confusion_matrix(gpc_cm, classes=class_names, title='Stochastic Gradient Descent Classifier\n Confusion Matrix, without normalization')
     plt.show()
 
-################################################################################################################################################
+ #################################################################################################################################################
 
 # Main fnction
 
@@ -736,6 +736,7 @@ def PRProject_Main(n):
         Stochastic_Gradient_Descent(usps_dataset_train, usps_dataset_test, test_usps_label, validation_usps_label)
 
 if __name__ == "__main__":
+    
     # Reading USPS data
 
     # Reading train data for preprocessing...
