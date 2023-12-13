@@ -159,7 +159,7 @@ def Knn_Classifier(x_train,y_train,x_test,y_test):
     a = usps_labels_test
     b = y_te_pred
 
-    # Create confusion matrix
+    # Create confusion matrix.
 
     plt.figure()
     cfs = confusion_matrix(usps_labels_test.argmax(axis=1), y_te_pred.argmax(axis=1))
