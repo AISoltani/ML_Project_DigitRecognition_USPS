@@ -292,7 +292,7 @@ def PCA_Classifier(x_train,y_train,x_test,y_test,y_valid,y_test2,y_test3):
 
 ##########################################################################################################
 
-#LDA
+# LDA
 
 def LDA_Classifier(x_train,y_train,x_test,y_test,y_valid,y_test2):
 
