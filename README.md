@@ -40,6 +40,81 @@ given labeled training data (supervised learning), the algorithm
 outputs an optimal hyperplane which categorizes new
 examples.
 
+Digit recognition on the USPS dataset involves training a machine learning model to accurately classify handwritten digits. The USPS dataset consists of images of handwritten digits ranging from 0 to 9.
+
+Here's a step-by-step guide to performing digit recognition on the USPS dataset in Python:
+
+Import the required libraries:
+
+
+```bash
+import numpy as np
+from sklearn.datasets import fetch_openml
+from sklearn.model_selection import train_test_split
+from sklearn.neural_network import MLPClassifier
+from sklearn.metrics import accuracy_score
+import matplotlib.pyplot as plt
+Load the USPS dataset using the fetch_openml function from scikit-learn:
+
+```
+
+Load the USPS dataset using the fetch_openml function from scikit-learn:
+
+```bash
+usps = fetch_openml('usps', version=2)
+Preprocess the data:
+Separate the features (pixel values) and targets (digit labels):
+
+```
+
+```bash
+X = usps.data.astype('float64')
+y = usps.target.astype('int64')
+Split the data into training and testing sets:
+
+```
+
+```bash
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+Normalize the pixel values to a range between 0 and 1:
+
+```
+
+```bash
+X_train /= 255.0
+X_test /= 255.0
+Train a machine learning model on the training data. In this example, we'll use a Multi-Layer Perceptron (MLP) classifier:
+python
+```
+
+```bash
+model = MLPClassifier(hidden_layer_sizes=(50,), max_iter=10)
+model.fit(X_train, y_train)
+Evaluate the model's performance on the test data:
+```
+
+```bash
+y_pred = model.predict(X_test)
+accuracy = accuracy_score(y_test, y_pred)
+print("Accuracy:", accuracy)
+Visualize a few example predictions:
+```
+
+
+```bash
+fig, axes = plt.subplots(3, 3, figsize=(8, 8))
+for i, ax in enumerate(axes.flat):
+    ax.imshow(X_test[i].reshape(16, 16), cmap='gray')
+    ax.set_title(f"True: {y_test[i]}, Pred: {y_pred[i]}")
+    ax.axis('off')
+plt.show()
+```
+
+
+This is a basic example of how to perform digit recognition on the USPS dataset using Python. You can explore different classifiers and experiment with hyperparameter tuning to improve the accuracy of the model.
+
+I hope this explanation helps! Let me know if you have any further questions.
+
 # Accuracy
 
 The table of accuracy:
