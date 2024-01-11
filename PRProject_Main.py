@@ -34,9 +34,7 @@ from sklearn.metrics import recall_score
 from sklearn.metrics import f1_score
 from sklearn import preprocessing
 import itertools
-import os, re
-import math
-import cv2
+import os, re, cv2, math
 
 # tools for preprocessing on input data...resize and scaling
 
