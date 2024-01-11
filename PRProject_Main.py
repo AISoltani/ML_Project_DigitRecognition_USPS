@@ -217,13 +217,13 @@ def PCA_Classifier(x_train,y_train,x_test,y_test,y_valid,y_test2,y_test3):
             i += 1
         return i
 
-    # Reconstruct PCA
+    ## Reconstruct PCA
 
     def Rec_PCA(data_new, eigv):
         y = np.matmul(data_new, np.transpose(eigv))
         return y
 
-    # Splitor
+    ## Splitor
 
     def split_feature(e_vecs, d):
         new_e_vecs = e_vecs[:, 0:d]
